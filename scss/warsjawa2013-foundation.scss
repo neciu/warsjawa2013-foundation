@@ -1,2 +1,9 @@
 @import "normalize";
 @import "foundation";
+
+ul.news {
+  .lead {
+    @extend .subheader;
+    @extend .show-for-medium-up;
+  }
+}

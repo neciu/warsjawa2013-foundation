@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -835,6 +834,7 @@ select {
 
 .show-for-medium,
 .show-for-medium-up,
+ul.news .lead,
 .show-for-large,
 .show-for-large-up,
 .show-for-xlarge {
@@ -879,7 +879,8 @@ th.hide-for-xlarge {
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 768px) {
   .show-for-medium,
-  .show-for-medium-up {
+  .show-for-medium-up,
+  ul.news .lead {
     display: inherit !important; }
 
   .show-for-small {
@@ -893,21 +894,22 @@ th.hide-for-xlarge {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  table.show-for-medium, table.show-for-medium-up, table.hide-for-small {
+  table.show-for-medium, table.show-for-medium-up, ul.news table.lead, table.hide-for-small {
     display: table; }
 
-  thead.show-for-medium, thead.show-for-medium-up, thead.hide-for-small {
+  thead.show-for-medium, thead.show-for-medium-up, ul.news thead.lead, thead.hide-for-small {
     display: table-header-group !important; }
 
-  tbody.show-for-medium, tbody.show-for-medium-up, tbody.hide-for-small {
+  tbody.show-for-medium, tbody.show-for-medium-up, ul.news tbody.lead, tbody.hide-for-small {
     display: table-row-group !important; }
 
-  tr.show-for-medium, tr.show-for-medium-up, tr.hide-for-small {
+  tr.show-for-medium, tr.show-for-medium-up, ul.news tr.lead, tr.hide-for-small {
     display: table-row !important; }
 
-  td.show-for-medium, td.show-for-medium-up, td.hide-for-small,
+  td.show-for-medium, td.show-for-medium-up, ul.news td.lead, td.hide-for-small,
   th.show-for-medium,
   th.show-for-medium-up,
+  ul.news th.lead,
   th.hide-for-small {
     display: table-cell !important; } }
 /* Large Displays: 1280px - 1440px */
@@ -1361,7 +1363,7 @@ p.lead {
   font-size: 1.21875em;
   line-height: 1.6; }
 
-.subheader {
+.subheader, ul.news .lead {
   line-height: 1.4;
   color: #6f6f6f;
   font-weight: 300;
@@ -4520,7 +4522,7 @@ ul.pagination {
   .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
     line-height: 1;
     margin-bottom: 0.625em; }
-    .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+    .panel h1.subheader, .panel ul.news h1.lead, ul.news .panel h1.lead, .panel h2.subheader, .panel ul.news h2.lead, ul.news .panel h2.lead, .panel h3.subheader, .panel ul.news h3.lead, ul.news .panel h3.lead, .panel h4.subheader, .panel ul.news h4.lead, ul.news .panel h4.lead, .panel h5.subheader, .panel ul.news h5.lead, ul.news .panel h5.lead, .panel h6.subheader, .panel ul.news h6.lead, ul.news .panel h6.lead {
       line-height: 1.4; }
   .panel.callout {
     border-style: solid;
@@ -4540,7 +4542,7 @@ ul.pagination {
     .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
       line-height: 1;
       margin-bottom: 0.625em; }
-      .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+      .panel.callout h1.subheader, .panel.callout ul.news h1.lead, ul.news .panel.callout h1.lead, .panel.callout h2.subheader, .panel.callout ul.news h2.lead, ul.news .panel.callout h2.lead, .panel.callout h3.subheader, .panel.callout ul.news h3.lead, ul.news .panel.callout h3.lead, .panel.callout h4.subheader, .panel.callout ul.news h4.lead, ul.news .panel.callout h4.lead, .panel.callout h5.subheader, .panel.callout ul.news h5.lead, ul.news .panel.callout h5.lead, .panel.callout h6.subheader, .panel.callout ul.news h6.lead, ul.news .panel.callout h6.lead {
         line-height: 1.4; }
     .panel.callout a {
       color: white; }
