@@ -3374,13 +3374,13 @@ label.error {
       font-size: 0.625em; }
 
 .top-bar-js-breakpoint {
-  width: 940px !important;
+  width: 768px !important;
   visibility: hidden; }
 
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 768px) {
   .top-bar {
     background: #111111;
     *zoom: 1;
